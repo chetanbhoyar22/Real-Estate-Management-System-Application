@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Login/Sign Up Page</title>
+    <link href='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css' rel='stylesheet'>
+    <link href="css/real-estate.css" rel="stylesheet">
+    <link href='' rel='stylesheet'>
+<style>
+    body {
+    background-color: #000;
+}
+
+.card {
+    width: 400px;
+    border: none;
+    margin: 100px;
+}
+
+.btr {
+    border-top-right-radius: 5px !important
+}
+
+.btl {
+    border-top-left-radius: 5px !important
+}
+
+.btn-dark {
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd
+}
+
+.btn-dark:hover {
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd
+}
+
+.nav-pills {
+    display: table !important;
+    width: 100%
+}
+
+.nav-pills .nav-link {
+    border-radius: 0px;
+    border-bottom: 1px solid #0d6efd40
+}
+
+.nav-item {
+    display: table-cell;
+    background: #0d6efd2e
+}
+
+.form {
+    padding: 10px;
+    height: 300px
+}
+
+.form input {
+    margin-bottom: 12px;
+    border-radius: 3px
+}
+
+.form input:focus {
+    box-shadow: none
+}
+
+.form button {
+    margin-top: 20px
+}
+
+#navlink {
+    background-color: #343a40;
+}
+
+</style>
+</head>
+<body oncontextmenu='return false' class='snippet-body'>
+
+<!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">VastuNamah</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto" style="background-color: #343a40">
+          <li class="nav-item active">
+            <a class="nav-link" id="navlink" href="index.html">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="navlink" href="properties.html">Properties</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="navlink" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="navlink" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!--/ login form content/-->
+<div class="d-flex justify-content-center align-items-center mt-5">
+    
+        
+         <form name="frm1" method="post" action="Check">
+         <div class="card">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item text-center"> <a class="nav-link active info" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Log In</a></li>
+        </ul>
+         <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <div class="form px-3 pt-3">
+                <input type="text" name="em" class="form-control" placeholder="Email" required> 
+                <br>
+                <input type="password" name="psw" class="form-control" placeholder="Password" required>
+                <br>
+                <button class="btn btn-success btn-block">Login</button></div>
+            </div>
+             </form>
+         
+             <form name="frm2" method="post" action="Register">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+             <li class="nav-item text-center"> <a class="nav-link active btr" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="true">Sign Up</a></li>
+        </ul>
+            <div class="form px-3 pt-3"> 
+                <input type="text" name="usrnm" class="form-control" placeholder="Name" required>
+                 <input type="text" name="em" class="form-control" placeholder="Email" required> 
+                 <input type="number" name="mn" class="form-control" placeholder="Mobile No." required> 
+                 <input type="password" name="psw" class="form-control" placeholder="Password" required> 
+                 <button class="btn btn-success btn-block">Register</button>
+                 </div>
+                 </form>
+           </div>
+        </div>
+    </div>
+</div>
+
+ 
+  <!-- Footer -->
+  <footer class="py-2 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright @2021 - MCA-PRMIT&R Badnera-Amravati</p><br>
+    </div>
+    <!-- /.container -->
+  </footer>
+</body>
+<script type='text/javascript' src=''></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+    <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'></script>
+    <script type='text/javascript'></script>
+</html>
