@@ -104,7 +104,7 @@ if(session.getAttribute("email")!=null)
             <a class="nav-link" id="navlink" href="purchaseproperty.jsp">All Properties</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id="navlink" href="showprofile.jsp">Your Profile</a>
+            <a class="nav-link" id="navlink" href="showprofile2.jsp">Your Profile</a>
           </li>
           <li class="nav-item">
           	<a class="nav-link" id="navlink" href="contact.html">Contact</a>
@@ -137,8 +137,8 @@ String uid=String.valueOf(session.getAttribute("email"));
 <hr>
 <h4 Style="color:purple"><b><i>Your Account Information</i></b></h4> 
 <br>
-&ensp;<a href="showprofile.jsp"><b>Profile Details</b></a> &nbsp; | &nbsp;
-<a href="changepassword.jsp"><b>Change Password</b></a>
+&ensp;<a href="showprofile2.jsp"><b>Profile Details</b></a> &nbsp; | &nbsp;
+<a href="changepassword2.jsp"><b>Change Password</b></a>
 <hr>
 <h4 Style="color:green"><b><i>&ensp;All Users Details</i></b></h4>
 <br>

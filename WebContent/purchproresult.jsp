@@ -69,7 +69,7 @@ try
 		<td><center><b><%=rs.getString("pay_mode") %>
 		<td><center><b><%=rs.getDate("pdate") %>
 		<td><center><b><%=rs.getString("status") %>
-		<td><center><b><a href="cancelpurp.jsp?nm=<%=name%>">Delete Property</a>
+		<td><center><b><a href="cancelpurp1.jsp?nm=<%=name%>">Delete Property</a>
 	    </tr>
 	    
 <%	

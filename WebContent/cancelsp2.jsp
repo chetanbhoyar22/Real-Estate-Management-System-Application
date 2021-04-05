@@ -1,24 +1,21 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-    <%@page import="java.sql.*" %>
-      <%@page import="rems_beans.*" %>
 <!DOCTYPE html>
+<%@page import="java.sql.*" %>
+<%@page import="rems_beans.*" %>
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Transaction Cancel Page</title>
+<title>Sale Own Property Deleted</title>
 </head>
 <body>
 <%
 if(session.getAttribute("email")!=null)
 {
-%>
-<center>
-<%
 String name=request.getParameter("nm");
 %>
-<br>
-<h2><b style="color:red"><%=name %> Purchase Property Has Been Cancelled..!</b></h2>
+<center>
+<h2 Style='color:green'>Your Sale Property Deleted Successfully...! </h2>
 <hr>
 <%
 Connection con;
@@ -27,10 +24,9 @@ try
 {
 	DBConnector dbc=new DBConnector();
 	con=dbc.getDbconnection(); 
-	pst=con.prepareStatement("delete from purchaseproperty where poname=?;");
+	pst=con.prepareStatement("delete from SOP where name=?;");
 	pst.setString(1,name);
 	pst.executeUpdate();
-	out.println("<h3 Style='color:brown'>Transaction Deleted");
 	con.close();
 }
 catch(Exception e)
@@ -38,12 +34,8 @@ catch(Exception e)
 	out.println(e);
 }
 %>
-<br><br>
-<a href="purchaseproperty.jsp">Purchase Property</a>
-<br><br>
-<hr>
-<a href="userdashboard.jsp"><i>Home</i></a> | <a href="contact.html"><i>Contact Us</i></a>
-
+<br>
+<a href="adminpanel.jsp"><b>Go To Home</b></a>
 <%
 }
 else 
