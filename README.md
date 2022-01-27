@@ -9,8 +9,6 @@
 - Full featured house properties  
 - Checkout process (Payment Method - - Dedit Card & Net Banking)
 
-```
-
 # Front-End
 
 (Only FrontEnd Part Hoisted)
