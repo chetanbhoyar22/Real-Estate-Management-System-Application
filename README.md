@@ -9,13 +9,13 @@
 - Full featured house properties  
 - Checkout process (Payment Method - - Dedit Card & Net Banking)
 
-# Front-End
+## Front-End
 
 (Only FrontEnd Part Hoisted)
 
 https://chetanbhoyar22.github.io/Real-Estate-Management-System-Application/WebContent/index.html 
 
-# Back-End 
+## Back-End 
 
 (BackEnd Part Not Hoisted)
 
